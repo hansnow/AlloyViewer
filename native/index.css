@@ -101,7 +101,6 @@ a {
 }
 .imagelist {
   display: -webkit-box;
-  display: box;
   height: 100%;
   list-style-type: none;
   -webkit-touch-callout: none;
