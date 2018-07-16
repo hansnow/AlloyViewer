@@ -15,6 +15,7 @@
  *
  **********************************************************************************************/
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import AlloyFinger from './libs/alloyfinger.js'
 import Transform from './libs/transform.js'
 import { CenterImage } from './components.js'
@@ -34,18 +35,18 @@ class ImageView extends Component {
     }
 
     static propTypes = {
-        gap: React.PropTypes.number,
-        maxScale: React.PropTypes.number,
-        current: React.PropTypes.number,
-        imagelist: React.PropTypes.array.isRequired,
-        disablePageNum: React.PropTypes.bool,
-        disablePinch: React.PropTypes.bool,
-        enableRotate: React.PropTypes.bool,
-        disableDoubleTap: React.PropTypes.bool,
-        longTap: React.PropTypes.func,
-        close: React.PropTypes.func.isRequired,
-        changeIndex: React.PropTypes.func,
-        initCallback: React.PropTypes.func
+        gap: PropTypes.number,
+        maxScale: PropTypes.number,
+        current: PropTypes.number,
+        imagelist: PropTypes.array.isRequired,
+        disablePageNum: PropTypes.bool,
+        disablePinch: PropTypes.bool,
+        enableRotate: PropTypes.bool,
+        disableDoubleTap: PropTypes.bool,
+        longTap: PropTypes.func,
+        close: PropTypes.func.isRequired,
+        changeIndex: PropTypes.func,
+        initCallback: PropTypes.func
     }
 
     constructor(props) {
